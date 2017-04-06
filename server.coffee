@@ -2,8 +2,8 @@ require('dotenv').config()
 
 express = require 'express'
 
-AuthController = require './server/controllers/auth'
-RandomSqlTableController = require './server/controllers/randomsqltable'
+# AuthController = require './server/controllers/auth'
+# RandomSqlTableController = require './server/controllers/randomsqltable'
 
 app = express()
 http = require('http').Server(app)
@@ -12,16 +12,16 @@ http = require('http').Server(app)
 global.db = require './models'
 
 # Configure express
-require('./config/express')(app)
-require('./config/passport')(app)
+# require('./config/express')(app)
+# require('./config/passport')(app)
 
-require('./config/activity')(app)
+# require('./config/activity')(app)
 
-# Configure API Routes
-require('./config/api')(app)
+# # Configure API Routes
+# require('./config/api')(app)
 
-app.get '/api/isAuthenticated', AuthController.clientAuthenticate
-app.get '/api/v1/checkedInBookings', RandomSqlTableController.getCheckedInStudents
+# app.get '/api/isAuthenticated', AuthController.clientAuthenticate
+# app.get '/api/v1/checkedInBookings', RandomSqlTableController.getCheckedInStudents
 
 
 app.get '/*', (req, res) ->
