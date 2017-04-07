@@ -4,4 +4,4 @@ module.exports = (sequelize, DataTypes) ->
   randomSqlTable = sequelize.define 'randomSqlTable',
     randomCollumn:
       type: DataTypes.STRING
-      allowNull: trues
+      allowNull: true

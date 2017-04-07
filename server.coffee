@@ -25,14 +25,14 @@ global.db = require './models'
 
 
 app.get '/*', (req, res) ->
-  res.sendFile "#{process.cwd()}/views/index.html"
+    res.sendFile "#{process.cwd()}/views/index.html"
 
 port = process.env.PORT || 3001
 
 global.db.sequelize.sync().then ->
-  http.listen port
-  console.info "Server listening on port #{port}"
+    http.listen port
+    console.info "Server listening on port #{port}"
 
-  require('./scripts/smsReminders/smsReminders')()
-  require('./scripts/deletePdfs')()
+    # require('./scripts/smsReminders/smsReminders')()
+    # require('./scripts/deletePdfs')()
 module.exports = app
