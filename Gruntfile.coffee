@@ -25,10 +25,10 @@ module.exports = (grunt) ->
                 name: 'yourAppNameConfig'
             development:
                 constants:
-                    constantString: "String"
+                    constantString: "constantDevEnvStringToUseInAngularFiles"
             production:
                 constants:
-                    constantString: "String"
+                    constantString: "constantProdEnvStringToUseInAngularFiles"
 
         notify_hooks:
             options:
