@@ -23,10 +23,12 @@ module.exports = (grunt) ->
             options:
                 dest: 'dist/assets/js/config.js'
                 name: 'yourAppNameConfig'
-            # development:
-            #   constants:
-            # production:
-            #   constants:
+            development:
+                constants:
+                    constantString: "String"
+            production:
+                constants:
+                    constantString: "String"
 
         notify_hooks:
             options:
