@@ -40,7 +40,7 @@ module.exports = (grunt) ->
                     'web/**/*.coffee'
                     'web/*.coffee'
                 ]
-            tasks: ['build']
+                tasks: ['build']
 
     grunt.registerTask 'build', 'Builds the front end assets', ->
         grunt.task.run 'notify_hooks'
