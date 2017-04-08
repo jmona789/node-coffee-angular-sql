@@ -6,6 +6,6 @@ angular.module('yourAppName').config ($stateProvider, $urlRouterProvider, $locat
         url: '/'
         templateUrl: '/views/home.html'
         controller: 'OverviewController'
-        authenticate: true
+        # authenticate: true
 
     $locationProvider.html5Mode true
