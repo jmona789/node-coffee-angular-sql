@@ -2,7 +2,7 @@ angular.module 'yourAppName', [
   'ui.router'
   # 'ui.mask'
   # 'ngSanitize'
-  'yourAppNameConfig'
+  # 'yourAppNameConfig'
   # 'ng-showdown'
   # 'ngTable'
   # 'autocomplete'
@@ -14,8 +14,8 @@ angular.module 'yourAppName', [
   # 'highcharts-ng'
 ]
   # .config [
-  #   'cfpLoadingBarProvider'
-  #   (cfpLoadingBarProvider) ->
-  #     cfpLoadingBarProvider.includeSpinner = false
-  #     return
+  # #   'cfpLoadingBarProvider'
+  # #   (cfpLoadingBarProvider) ->
+  # #     cfpLoadingBarProvider.includeSpinner = false
+  # #     return
   # ]

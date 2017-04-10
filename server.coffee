@@ -12,7 +12,7 @@ http = require('http').Server(app)
 global.db = require './models'
 
 # Configure express
-# require('./config/express')(app)
+require('./config/express')(app)
 # require('./config/passport')(app)
 
 # require('./config/activity')(app)
