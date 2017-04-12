@@ -18,7 +18,7 @@ require('./config/express')(app)
 # require('./config/activity')(app)
 
 # # Configure API Routes
-# require('./config/api')(app)
+require('./config/api')(app)
 
 # app.get '/api/isAuthenticated', AuthController.clientAuthenticate
 # app.get '/api/v1/checkedInBookings', RandomSqlTableController.getCheckedInStudents
