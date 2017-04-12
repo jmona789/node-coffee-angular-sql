@@ -4,6 +4,7 @@
   "description": "A template for a web app written in node with coffee script using AngularJS and SQL",
   "main": "server.coffee",
   "scripts": {
+    "start":"nodemon server.coffee",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "James Mona",
