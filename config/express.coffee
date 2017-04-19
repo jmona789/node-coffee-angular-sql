@@ -27,7 +27,7 @@ module.exports = (app) ->
     app.use '/bower_components', express.static "#{process.cwd()}/bower_components"
     app.use '/node_modules', express.static "#{process.cwd()}/node_modules"
     # app.use '/images', express.static "#{process.cwd()}/images"
-    # app.use '/styles', express.static "#{process.cwd()}/styles"
+    app.use '/styles', express.static "#{process.cwd()}/styles"
     # app.use '/vendor', express.static "#{process.cwd()}/bower_components"
     app.use '/views', express.static "#{process.cwd()}/views"
     # app.use '/assets', express.static "#{process.cwd()}/images/assets"
