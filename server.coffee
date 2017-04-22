@@ -22,7 +22,7 @@ require('./config/api')(app)
 
 # app.get '/api/isAuthenticated', AuthController.clientAuthenticate
 # app.get '/api/v1/checkedInBookings', RandomSqlTableController.getCheckedInStudents
-
+require('./server/routes')(app)
 
 app.get '/*', (req, res) ->
     res.sendFile "#{process.cwd()}/views/index.html"
