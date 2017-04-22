@@ -5,8 +5,8 @@ module.exports = (app) ->
     app: app
     sequelize: db.sequelize
 
-  randomSqlTable = epilogue.resource
-    model: db.randomSqlTable
+  RandomSqlTable = epilogue.resource
+    model: db.RandomSqlTable
     endpoints: [
       '/api/randomSqlTables'
       '/api/randomSqlTables/:id'

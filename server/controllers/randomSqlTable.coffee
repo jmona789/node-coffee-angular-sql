@@ -1,5 +1,5 @@
 exports.listAll = (req, res) ->
-    db.RandomSqlTable.findAll
+    db.RandomSqlTable.findAll()
     .then (response) ->
         res.json response
         # where:

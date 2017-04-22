@@ -2,8 +2,8 @@ express = require 'express'
 # compression = require 'compression'
 # bodyParser = require 'body-parser'
 # pg = require 'pg'
-# session = require 'express-session'
-# SequelizeStore = require('connect-session-sequelize')(session.Store)
+session = require 'express-session'
+SequelizeStore = require('connect-session-sequelize')(session.Store)
 # timeout = require 'connect-timeout'
 
 module.exports = (app) ->
