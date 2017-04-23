@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = (sequelize, DataTypes) ->
-    ManyToOneRelationalSqlTable = sequelize.define 'ManyToOneRelationalSqlTable',
+    OneToMany = sequelize.define 'OneToMany',
         string:
             type: DataTypes.STRING
         int:
@@ -9,4 +9,5 @@ module.exports = (sequelize, DataTypes) ->
     ,
         classMethods:
             associate: (models) ->
-                ManyToOneRelationalSqlTable.belongsTo models.OneToManyRelationalSqlTable
+                OneToMany.hasMany models.ManyToOne,
+                    onDelete: 'cascade'
