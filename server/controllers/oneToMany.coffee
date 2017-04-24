@@ -4,9 +4,9 @@ Promise = require "bluebird"
 exports.getOne = (req, res) ->
     db.ManyToOne.findAll
         where:
-            id: req.params.id
+            OneToManyId: req.params.id
         include: [
-            model: db.ManyToOne
+            model: db.OneToMany
         ]
     .then (dbOneToMany) ->
         res.json dbOneToMany

@@ -10,5 +10,5 @@ module.exports = (app) ->
     # alt API routes
     app.get '/api/randomSqlTableAltApiRoute', randomSqlTableController.listAll
 
-    app.get '/api/v1/OneToMany/:OneToManyId', oneToManyController.getOne
+    app.get '/api/OneToMany/:id', oneToManyController.getOne
 
