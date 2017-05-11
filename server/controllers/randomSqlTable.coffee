@@ -17,3 +17,11 @@ exports.listAll = (req, res) ->
     #         time : dbBooking.Slot.time
         # .then (response) ->
         #     res.json response
+
+
+exports.getOne = (req, res) ->
+    db.RandomSqlTable.findOne
+        where:
+            id: req.params.id
+    .then (response) ->
+        res.json response

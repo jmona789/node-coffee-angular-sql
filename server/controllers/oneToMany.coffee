@@ -2,11 +2,25 @@ _ = require "lodash"
 Promise = require "bluebird"
 
 exports.getOne = (req, res) ->
-    db.ManyToOne.findAll
+    console.log 'yoyo'
+    console.log req.params.id
+    db.OneToMany.findAll
         where:
-            OneToManyId: req.params.id
+            id: req.params.id
         include: [
-            model: db.OneToMany
+            model: db.ManyToOne
         ]
     .then (dbOneToMany) ->
         res.json dbOneToMany
+
+
+    # console.log 'yoyo'
+    # console.log req.params.id
+    # db.ManyToOne.findAll
+    #     where:
+    #         OneToManyId: req.params.id
+    #     include: [
+    #         model: db.OneToMany
+    #     ]
+    # .then (dbOneToMany) ->
+    #     res.json dbOneToMany

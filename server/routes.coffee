@@ -9,6 +9,7 @@ oneToManyController = require '../server/controllers/oneToMany'
 module.exports = (app) ->
     # alt API routes
     app.get '/api/randomSqlTableAltApiRoute', randomSqlTableController.listAll
+    app.get '/api/randomSqlTableAltApiRoute/:id', randomSqlTableController.getOne
 
     app.get '/api/OneToMany/:id', oneToManyController.getOne
 
