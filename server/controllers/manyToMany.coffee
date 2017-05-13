@@ -1,13 +1,17 @@
-_ = require "lodash"
-Promise = require "bluebird"
+# _ = require "lodash"
+# Promise = require "bluebird"
 
-exports.getOne = (req, res) ->
-    db.ManyToMany.findAll
-        where:
-            id: req.params.id
-        include: [
-            model: db.Many1
-            model: db.Many2
-        ]
-    .then (dbManyToMany) ->
-        res.json dbManyToMany
+# exports.listAll = (req, res) ->
+#     db.Many1Many2.findAll
+#         # where:
+#         #     id: req.params.id
+#         include: [
+#             model: db.Many1
+#             model: db.Many2
+#         ]
+#     .then (dbMany1Many2) ->
+#         res.json dbMany1Many2
+
+
+
+#         

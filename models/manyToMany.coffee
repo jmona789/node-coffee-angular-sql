@@ -8,4 +8,4 @@ module.exports = (sequelize, DataTypes) ->
             classMethods:
                 associate: (models) ->
                     Many1Many2.belongsTo models.Many1
-                    Many1Many2.belongsTo models.Mnay2
+                    Many1Many2.belongsTo models.Many2
